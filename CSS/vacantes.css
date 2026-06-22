@@ -1,0 +1,85 @@
+body{
+    background:#f2f2f2;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.menu{
+    background:#07142B;
+    border-radius:20px;
+    margin-top:15px;
+    padding:10px;
+}
+
+.card{
+border:none;
+border-radius:20px;
+}
+
+.avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+background:#d8d8d8;
+margin:auto;
+}
+
+.vacante{
+background:white;
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+width:100px;
+height:100px;
+background:#d9d9d9;
+border-radius:15px;
+}
+
+.info{
+flex:1;
+padding-left:20px;
+}
+
+.info h3{
+font-weight:600;
+}
+
+.detalles{
+display:flex;
+gap:20px;
+font-size:14px;
+color:gray;
+margin-top:10px;
+}
+
+.botones{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.tip{
+display:flex;
+gap:15px;
+margin-top:25px;
+}
+
+.tip i{
+font-size:25px;
+}
+
+.guardar{
+font-size:25px;
+cursor:pointer;
+color:#888;
+}
+
+.guardar:hover{
+color:#0d6efd;
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/postulaciones.css">
+
+</head>
+<body>
+
+    
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark menu">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold" href="img/logo.png">
+                 RICALDONE
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" onclick="mostrar('inicio')">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="vacantes.html" onclick="mostrar('vacantes')">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Vacantes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="postulaciones.html" onclick="mostrar('postulaciones')">
+                            <i class="fa-solid fa-file"></i>
+                            Postulaciones
+                        </a>
+                    </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="postulaciones.html" onclick="mostrar('postulaciones')">
+                            <i class="fa-solid fa-file"></i>
+                            Postulaciones Guardadas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="asignaciones.html" onclick="mostrar('asignaciones')">
+                            <i class="fa-solid fa-list-check"></i>
+                            Asignaciones
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="notificaciones.html" onclick="mostrar('notificaciones')">
+                            <i class="fa-solid fa-bell"></i>
+                            Notificaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+
+<div class="container-fluid p-4">
+    <h1 class="titulo">
+        Mis asignaciones
+    </h1>
+    <p class="subtitulo">
+        Revisa las asignaciones de pasantías y horas sociales que te han asignado.
+    </p>
+
+
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-lg-3">
+            <div class="card kpi-card">
+                <div class="icon azul">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div>
+                    <h5>Horas completadas</h5>
+                    <h2>120</h2>
+                    <small>de 200 horas requeridas</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card kpi-card">
+                <div class="icon morado">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                </div>
+
+                <div>
+                    <h5>Horas pendientes</h5>
+                    <h2>80</h2>
+                    <small>Horas por completar</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card kpi-card">
+                <div class="icon verde">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div>
+                    <h5>Asignaciones activas</h5>
+                    <h2>2</h2>
+                    <small>asignaciones en curso</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card kpi-card">
+                <div class="icon amarillo">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div>
+                    <h5>Empresas asignadas</h5>
+                    <h2>1</h2>
+                    <small>empresas diferentes</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mb-4">
+        Asignaciones activas
+    </h2>
+
+
+
+    <div class="card asignacion">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="empresa-info">
+                    <div class="logo">
+                        APPLAUDO
+                    </div>
+                    <div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <h3 class="empresa">
+                                Applaudo Studios
+                            </h3>
+                            <span class="badge bg-success">
+                                Activa
+                            </span>
+                        </div>
+
+                        <p>
+                            <i class="fa-solid fa-user"></i>
+                            Asignado por: Ing. Carlos Perez
+                        </p>
+
+                        <p>
+                            Desarrollo y mantenimiento de módulos del sistema interno de la empresa.
+                            Apoyo en pruebas y documentación de procesos.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+                <h6>Proceso de horas</h6>
+
+                <div class="d-flex justify-content-between">
+                    <strong>60/80 horas</strong>
+                    <strong class="text-success">
+                        75%
+                    </strong>
+                </div>
+
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-primary"
+                        style="width:75%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-3">
+                <small>Supervisor empresarial</small>
+                <h6>Juan Martínez</h6>
+                <p>jmartinez@applaudo.com</p>
+            </div>
+
+            <div class="col-lg-2">
+                <small>Área</small>
+                <h6>Desarrollo de Software</h6>
+            </div>
+
+            <div class="col-lg-2">
+                <small>Horas asignadas</small>
+                <h6>80</h6>
+            </div>
+
+            <div class="col-lg-2">
+                <small>Estado</small>
+                <br>
+                <span class="badge bg-warning text-dark">
+                    En proceso
+                </span>
+            </div>
+
+            <div class="col-lg-3 text-end">
+
+                <button class="btn btn-outline-primary">
+                    <i class="fa-solid fa-eye"></i>
+                    Ver detalles
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+
+                <p>
+                    <i class="fa-regular fa-calendar"></i>
+                    Inicio
+                    <br>
+                    05/05/2026
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <p>
+                    <i class="fa-regular fa-calendar"></i>
+                    Fin estimado
+                    <br>
+                    05/08/2026
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Modalidad
+                    <br>
+                    Híbrida
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card asignacion mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="empresa-info">
+                    <div class="logo logo-tigo">
+                        TIGO
+                    </div>
+
+                    <div>
+                        <h3 class="empresa">
+                            Tigo El Salvador
+                        </h3>
+
+                        <p>
+                            <i class="fa-solid fa-user"></i>
+                            Asignado por: Lic. Ana Gómez
+                        </p>
+
+                        <p>
+                            Apoyo en el área de soporte técnico y análisis de datos.
+                            Elaboración de reportes semanales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h6>Proceso de horas</h6>
+                <div class="progress mt-3">
+                    <div class="progress-bar bg-primary"
+                        style="width:75%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

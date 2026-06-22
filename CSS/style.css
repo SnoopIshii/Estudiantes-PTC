@@ -1,0 +1,58 @@
+body{
+    background:#f2f2f2;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.menu{
+    background:#07142B;
+    border-radius:20px;
+    margin-top:15px;
+    padding:10px;
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+}
+
+.mini-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+}
+
+.icon-green{
+    font-size:40px;
+    color:#2ECC71;
+}
+
+.icon-blue{
+    font-size:40px;
+    color:#3B82F6;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    background:#ddd;
+    border-radius:15px;
+}
+
+.empresa{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    background:#dcdcdc;
+    border-radius:50%;
+    margin:auto;
+}
+
+.oculto{
+    display:none;
+}
