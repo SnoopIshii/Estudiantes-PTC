@@ -1,58 +1,262 @@
+header{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
 body{
-    background:#f2f2f2;
-    font-family:'Segoe UI',sans-serif;
+background:#ececec;
 }
 
-.menu{
-    background:#07142B;
-    border-radius:20px;
-    margin-top:15px;
-    padding:10px;
-}
 
-.card{
-    border:none;
-    border-radius:20px;
-}
-
-.mini-card{
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-}
-
-.icon-green{
-    font-size:40px;
-    color:#2ECC71;
-}
-
-.icon-blue{
-    font-size:40px;
-    color:#3B82F6;
+.navbar{
+background:#08192f;
+color:white;
+margin:15px;
+border-radius:25px;
+padding:12px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
-    width:90px;
-    height:90px;
-    background:#ddd;
-    border-radius:15px;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
-.empresa{
-    display:flex;
-    gap:20px;
-    align-items:center;
+.logo img{
+    width: 50px;
+height: 50px;
+border-radius:5px;
+}
+
+nav{
+display:flex;
+gap:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.buscar{
+position:relative;
+}
+
+.buscar input{
+width:300px;
+padding:10px 40px 10px 20px;
+border:none;
+border-radius:20px;
+}
+
+.buscar i{
+position:absolute;
+right:15px;
+top:12px;
+color:#333;
+}
+
+
+.container{
+display:grid;
+grid-template-columns:250px 1fr 220px;
+gap:15px;
+padding:0 20px 20px;
+}
+
+
+.profile-card{
+background:white;
+padding:20px;
+border:3px solid #1e90ff;
+text-align:center;
 }
 
 .avatar{
-    width:120px;
-    height:120px;
-    background:#dcdcdc;
-    border-radius:50%;
-    margin:auto;
+font-size:80px;
+color:#aaa;
+margin-bottom:10px;
 }
 
-.oculto{
-    display:none;
+.profile-card p{
+margin-top:10px;
+color:#777;
+}
+
+.profile-card span{
+color:#999;
+}
+
+.profile-card h4{
+margin:10px 0;
+}
+
+.profile-card button{
+background:#2e6edb;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+
+.grupos{
+margin-top:10px;
+background:white;
+padding:15px;
+border-radius:15px;
+}
+
+.grupos ul{
+list-style:none;
+}
+
+.activo li{
+padding:15px;
+border-radius:10px;
+cursor:pointer;
+margin-top:5px;
+}
+
+.grupos li.active{
+background:#edf4ff;
+color:#2e6edb;
+}
+
+/* MAIN */
+
+.acciones{
+background:white;
+padding:15px;
+border-radius:15px;
+}
+
+.cards{
+display:flex;
+gap:15px;
+margin-top:10px;
+}
+
+.card{
+background:#f8f8f8;
+padding:15px;
+border-radius:12px;
+flex:1;
+display:flex;
+gap:10px;
+align-items:center;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card i{
+font-size:22px;
+color:#2e6edb;
+}
+
+.tabla-container{
+background:white;
+margin-top:15px;
+border-radius:15px;
+padding:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#efefef;
+padding:15px;
+text-align:left;
+}
+
+td{
+padding:15px;
+border-bottom:1px solid #eee;
+}
+
+/* PROGRESS */
+
+.progress{
+height:10px;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+}
+
+.bar{
+height:100%;
+border-radius:10px;
+}
+
+/* ESTADOS */
+
+.badge{
+padding:5px 10px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+.danger{
+background:#ffe0e0;
+color:red;
+}
+
+.warning{
+background:#fff0cc;
+color:#f0a500;
+}
+
+.success{
+background:#d8f5dd;
+color:green;
+}
+
+
+
+.estatu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.stat-card{
+background:white;
+padding:15px;
+border-radius:15px;
+display:flex;
+gap:15px;
+align-items:center;
+}
+
+.blue i{
+background:#0d6efd;
+}
+
+.green i{
+background:#28a745;
+}
+
+.purple i{
+background:#6f42c1;
+}
+
+.stat-card i{
+color:white;
+padding:15px;
+border-radius:10px;
+}
+
+.stat-card span{
+color:#555;
 }

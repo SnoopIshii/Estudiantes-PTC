@@ -1,0 +1,235 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#ececec;
+}
+
+.navbar{
+background:#071a31;
+margin:15px;
+padding:12px 25px;
+border-radius:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+.logo img {
+width: 50px;
+height: 50px;
+
+}
+nav{
+display:flex;
+gap:35px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.buscar{
+position:relative;
+}
+
+.buscar input{
+width:260px;
+padding:10px 40px 10px 15px;
+border:none;
+border-radius:20px;
+}
+
+.buscar i{
+position:absolute;
+right:15px;
+top:12px;
+color:black;
+}
+
+.container{
+display:grid;
+grid-template-columns:180px 270px 300px 180px;
+gap:15px;
+padding:0 20px;
+}
+
+.perfil{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.avatar{
+font-size:80px;
+color:#aaa;
+}
+
+.perfil p{
+color:#777;
+margin-top:10px;
+}
+
+.perfil button{
+width:100%;
+background:#2d6cdf;
+color:white;
+border:none;
+padding:10px;
+border-radius:10px;
+margin-top:15px;
+cursor:pointer;
+}
+
+.grupo{
+background:white;
+padding:15px;
+border-radius:15px;
+margin-top:10px;
+}
+
+.grupo ul{
+list-style:none;
+}
+
+.grupo li{
+padding:12px;
+margin-top:5px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.grupo .activo{
+background:#edf4ff;
+color:#2d6cdf;
+}
+
+.vacantes,
+.estudiantes{
+background:white;
+padding:10px;
+border-radius:15px;
+height:385px;
+overflow-y:auto;
+}
+
+.vacantes-card{
+display:flex;
+gap:10px;
+padding:10px;
+border-radius:15px;
+border:2px solid transparent;
+cursor:pointer;
+margin-bottom:10px;
+}
+
+.vacante-card.activo{
+border:2px solid #2d6cdf;
+}
+
+.vacante-img{
+width:60px;
+height:45px;
+background:#d9d9d9;
+border-radius:8px;
+}
+
+.vacante-info h4{
+font-size:16px;
+}
+
+.company{
+color:#2d6cdf;
+font-size:12px;
+font-weight:600;
+}
+
+.slots{
+color:#20b85b;
+font-size:12px;
+}
+
+.estudiantes-head{
+display:flex;
+justify-content:space-between;
+margin-bottom:15px;
+}
+
+.estudiantes-head input{
+padding:7px;
+border-radius:15px;
+border:1px solid #ccc;
+}
+
+.estudiantes{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 0;
+border-bottom:1px solid #eee;
+}
+
+.estudiantes-info{
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.estudiantes i{
+font-size:26px;
+color:#999;
+}
+
+.proceso{
+width:90px;
+height:8px;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+}
+
+.bar{
+width:15%;
+height:100%;
+background:red;
+}
+
+.detalles{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:15px;
+}
+
+.estudi-selec{
+display:flex;
+gap:10px;
+margin:10px 0;
+}
+
+.asignacion{
+background:#2d6cdf;
+color:white;
+border:none;
+padding:14px;
+border-radius:25px;
+cursor:pointer;
+font-weight:600;
+}

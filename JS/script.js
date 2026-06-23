@@ -1,62 +1,86 @@
-console.log("Portal de Pasantías cargado");
+const estudiantes = [
 
-function mostrarAlerta() {
-    alert("Postulación enviada correctamente");
+{hours:30, estatu:"danger"},
+{hours:40, estatu:"danger"},
+{hours:50, estatu:"danger"},
+
+{hours:60, estatu:"warning"},
+{hours:65, estatu:"warning"},
+{hours:100,estatu:"warning"},
+
+{hours:150,estatu:"success"},
+{hours:180,estatu:"success"},
+{hours:190,estatu:"success"},
+{hours:200,estatu:"success"}
+
+];
+
+const table = document.getElementById("estudiantesTabla");
+
+students.forEach(student => {
+
+let percent = (student.hours / 200) * 100;
+
+let color = "red";
+let text = "En riesgo";
+
+if(percent >= 30){
+color = "#f0a500";
+text = "Atención";
 }
-function mostrar(id){
 
-let secciones =
-document.querySelectorAll(".seccion");
-
-secciones.forEach(sec=>{
-sec.classList.add("oculto");
-});
-
-document
-.getElementById(id)
-.classList.remove("oculto");
-
+if(percent >= 70){
+color = "#28a745";
+text = "Avanzado";
 }
 
-const ctx =
-document.getElementById("grafico");
-
-new Chart(ctx,{
-
-type:'line',
-
-data:{
-labels:[
-'1 May',
-'8 May',
-'15 May',
-'22 May',
-'29 May'
-],
-
-datasets:[{
-
-label:'Horas',
-
-data:[
-5,
-12,
-28,
-18,
-36
-],
-
-fill:true,
-
-tension:.4,
-
-borderColor:'#4F46E5'
-
-}]
-},
-
-options:{
-responsive:true
+if(percent >= 100){
+color = "#008000";
+text = "Completado";
 }
+
+table.innerHTML += `
+
+<tr>
+
+<td>
+<i class="fa-solid fa-circle-user"></i>
+&nbsp; Nombre del estudiante
+</td>
+
+<td>2 Software A - G1</td>
+
+<td>
+
+<div style="display:flex;align-items:center;gap:10px;">
+
+${student.hours}/200
+
+<div class="progress" style="width:100px">
+
+<div class="bar"
+style="
+width:${percent}%;
+background:${color};
+">
+</div>
+
+</div>
+
+${percent.toFixed(0)}%
+
+</div>
+
+</td>
+
+<td>
+<span class="badge ${student.status}">
+${text}
+</span>
+</td>
+
+</tr>
+
+`;
 
 });
