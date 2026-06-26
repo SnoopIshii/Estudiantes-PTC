@@ -13,40 +13,163 @@
 <header class="navbar">
 
     <div class="logo">
-        <img src="img/logo.png" alt="ITR">
-        <div>
-            <h2>RICALDONE</h2>
-        </div>
+        <img src="img/logo.png">
+        <h2>RICALDONE</h2>
     </div>
 
-    <!-- NAVBAR -->
-
     <nav>
-        <a href="estudiantes.html">
-            <i class="fa-solid fa-user-graduate"></i>
-            Estudiantes
-        </a>
-
-        <a href="pasantias.html">
-            <i class="fa-regular fa-square-check"></i>
-            Pasantías
-        </a>
-           <a href="reportes.html">
-            <i class="fa-solid fa-user-graduate"></i>
-            Reportes
-        </a>
-
-        <a href="notificaciones.html">
-            <i class="fa-regular fa-bell"></i>
-            Notificaciones
-        </a>
+        <a href="index.html"><i class="fa-solid fa-user-graduate"></i> Estudiantes</a>
+        <a href="pasantias.html"><i class="fa-regular fa-square-check"></i> Pasantías</a>
+        <a href="reportes.html"><i class="fa-regular fa-file-lines"></i> Reportes</a>
+        <a href="notificaciones.html"><i class="fa-regular fa-bell"></i> Notificaciones</a>
     </nav>
 
     <div class="buscar">
-        <input type="text" placeholder="Busca estudiantes...">
+        <input type="text" placeholder="Busca estudiantes">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 </header>
+
+<div class="container-fluid p-4"> 
+    <div class="row">
+
+        <div class="col-lg-2">
+            <div class="card panel-card">
+                <div class="titulo-filtro">
+                    <h5>
+                        Filtros
+                        <i class="fa-solid fa-sliders"></i>
+                    </h5>
+                </div>
+                <div class="menu-notificaciones">
+                    <div class="item-menu activo">
+                        <i class="fa-regular fa-envelope"></i>
+                        Todas
+                        <span>13</span>
+                    </div>
+
+                     <div class="item-menu">
+                        <i class="fa-regular fa-envelope"></i>
+                        Sin leer
+                        <span>5</span>
+                    </div>
+
+                    <div class="item-menu">
+                        <i class="fa-regular fa-envelope"></i>
+                        Vacantes
+                        <span>6</span>
+                    </div>
+
+                    <div class="item-menu">
+                        <i class="fa-regular fa-envelope"></i>
+                        Postulaciones
+                        <span>3</span>
+                    </div>
+
+                    <div class="item-menu">
+                        <i class="fa-regular fa-envelope"></i>
+                        Recordatorios
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preferencias -->
+
+             <div class="card panel-card mt-3">
+                <h5>Preferencias</h5>
+                <div class="Preferencias">
+                    <div>
+                        <i class="fa-regular fa-bell"></i>Notificaciones Push
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" checked type="checkbox">
+                    </div>
+                </div>
+                <div class="Preferencia">
+                    <div>
+                        <i class="fa-regular fa-envelope"></i> Email
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" checked type="checkbox">
+                    </div>
+                </div>
+
+                <div class="Preferencia">
+                    <div>
+                        <i class="fa-regular fa-bell-slash"></i>Silenciar
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+             </div>
+        </div>
+
+        <!-- Notificaciones -->
+         <div class="col-lg-7">
+            <div class="card panel-card">
+                <div class="cabecera">
+                    <div>
+                        <h3> Notificaciones</h3>
+                        <p> Aqui puedes ver todas tus notificaciones recientes.</p>
+                    </div>
+                    <a href="#" class="leer-todas">Marcar todas como leidas </a>
+                </div>
+                <div id="listaNoti">
+                </div>
+            </div>
+         </div>
+
+         <!-- Perfil -->
+
+         <div class=" col-lg-3">
+            <div class="card perfil-card">
+                <div class="perfil-header">
+                </div>
+                <div class="avatar">
+                </div>
+                <h4>Usuario</h4>
+                <p>Desarollo de Software</p>
+                <p>Segundo año</p>
+                <p class="disponible"> Disponible pata oportunidades</p>
+                <button class="btn btn-primary w-75"> Ver mi perfil</button>
+            </div>
+            <div class="card panel-card mt-3">
+                <h5>Consejos para ti</h5>
+                <div class="tips">
+                    <div class="icon-tips azul">
+                        <i class="fa-regular fa-file"></i>
+                    </div>
+                    <div>
+                        <h6>Completa tu perfil</h6>
+                        <p>Tendras mas oportunidades</p>
+                    </div>
+                </div>
+                <div class="tips">
+                    <div class="icon-tips morado"> 
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h6>Destaca habilidades</h6>
+                        <p>Agrega habilidades relevantes</p>
+                    </div>
+                </div>
+                <div class="tips">
+                    <div class="icon-tips verde">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h6>Postulate constantemente</h6>
+                        <p>Mas postulacioes, mas oportunidades</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+</div>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="JS/notificaciones.js"></script>
