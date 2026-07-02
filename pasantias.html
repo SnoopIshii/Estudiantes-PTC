@@ -17,10 +17,11 @@
         <h2>RICALDONE</h2>
     </div>
 
-    <nav>
-        <a href="index.html"><i class="fa-solid fa-user-graduate"></i> Estudiantes</a>
-        <a href="pasantias.html"><i class="fa-regular fa-square-check"></i> Pasantías</a>
-        <a href="reportes.html"><i class="fa-regular fa-file-lines"></i> Reportes</a>
+   <nav>
+                <a href="index.html"><i class="fa-regular fa-square-check"></i> Inicio</a>
+        <a href="Mis grupos.html"><i class="fa-solid fa-user-graduate"></i> Mis grupos</a>
+        <a href="estudiantes.html"><i class="fa-regular fa-file-lines"></i> Estudiantes</a>
+                <a href="pasantias.html"><i class="fa-regular fa-file-lines"></i> Pasantías</a>
         <a href="notificaciones.html"><i class="fa-regular fa-bell"></i> Notificaciones</a>
     </nav>
 
@@ -29,105 +30,266 @@
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 </header>
-<div class="container">
 
-    <!-- SIDEBAR -->
 
-    <aside class="sidebar">
 
-        <div class="perfil">
+<div class="container-fluid">
 
-            <div class="avatar">
-                <i class="fa-solid fa-circle-user"></i>
-            </div>
+<div class="row">
 
-            <h3>Usuario</h3>
-            <p>Lic. Carlos Mendoza</p>
-            <span>Docente</span>
-            <h4>Desarrollo de Software</h4>
-            <button>Ver mi perfil</button>
-        </div>
+    
+<div class="col-lg-2 mt-3">
 
-        <div class="grupo">
+<div class="card shadow-sm perfil-card">
 
-            <h3>Mis grupos asignados</h3>
+<div class="text-center p-4">
 
-            <ul>
-                <li class="activo">
-                    <i class="fa-solid fa-users"></i>
-                    2 Software A - Grupo 1
-                </li>
+<img src="assets/avatar.png"
+class="perfil-img">
 
-                <li>
-                    <i class="fa-solid fa-users"></i>
-                    2 Software A - Grupo 2
-                </li>
+<h4 class="mt-3">
 
-                <li>
-                    <i class="fa-solid fa-users"></i>
-                    2 Software B - Grupo 1
-                </li>
+Usuario
 
-                <li>
-                    <i class="fa-solid fa-users"></i>
-                    2 Software B - Grupo 2
-                </li>
-            </ul>
-        </div>
-    </aside>
+</h4>
 
-    <!-- VACANTES -->
+<p class="text-secondary mb-1">
 
-    <section class="vacantes">
-        <div id="vacanLista"></div>
-    </section>
+Lic. Carlos Mendoza
 
-    <!-- ESTUDIANTES -->
+</p>
 
-    <section class="estudiantes">
-        <div class="estudiantes-head">
-            <h3>Estudiantes</h3>
-            <input type="text" placeholder="Buscar estudiante">
-        </div>
+<p class="text-secondary mb-1">
 
-        <div id="estudianteLista"></div>
-    </section>
+Docente
 
-    <!-- PANEL DERECHO -->
+</p>
 
-    <aside class="detalles">
-        <div class="card">
-            <h3>Detalle asignación</h3>
-            <hr>
+<h6>
 
-            <p><strong>Empresa:</strong> Nombre de la empresa</p>
-            <p><strong>Rol:</strong> Frontend Developer</p>
-            <p><strong>Modalidad:</strong> Presencial</p>
-            <p><strong>Duración:</strong> 6 meses</p>
-        </div>
+Desarrollo de Software
 
-        <div class="card">
-            <h3>Estudiante seleccionado</h3>
-            <div class="estudi-selec">
-                <i class="fa-solid fa-circle-user"></i>
-                <div>
-                    <p>Nombre del estudiante</p>
-                    <small>2 Software A - G1</small>
-                </div>
-            </div>
+</h6>
 
-            <div class="proceso">
-                <div class="bar"></div>
-            </div>
-            <span>30 / 200</span>
-        </div>
+<button class="btn btn-primary w-100 mt-3">
 
-        <button class="asignacion">
-            Asignar pasantía
-        </button>
-    </aside>
+Ver mi perfil
+
+</button>
+
 </div>
 
+</div>
+
+<!-- ================= GRUPOS ================= -->
+
+<div class="card shadow-sm mt-3">
+
+<div class="card-header">
+
+<h4>Mis grupos asignados</h4>
+
+</div>
+
+<div class="list-group list-group-flush">
+
+<a href="#" class="list-group-item active">
+
+<i class="bi bi-people-fill"></i>
+
+2 Software A - Grupo 1
+
+</a>
+
+<a href="#" class="list-group-item">
+
+<i class="bi bi-people"></i>
+
+2 Software A - Grupo 2
+
+</a>
+
+<a href="#" class="list-group-item">
+
+<i class="bi bi-people"></i>
+
+2 Software B - Grupo 1
+
+</a>
+
+<a href="#" class="list-group-item">
+
+<i class="bi bi-people"></i>
+
+2 Software B - Grupo 2
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= EMPRESAS ================= -->
+
+<div class="col-lg-4 mt-3">
+
+<div class="empresa-lista">
+
+<div class="empresa active">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Desarrollo Frontend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+4 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Presencial
+
+</p>
+
+</div>
+
+</div>
+
+<div class="empresa">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Desarrollo Frontend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+2 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Presencial
+
+</p>
+
+</div>
+
+</div>
+
+<div class="empresa">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Desarrollo Frontend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+5 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Presencial
+
+</p>
+
+</div>
+
+</div>
+
+<div class="empresa">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Desarrollo Backend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+3 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Virtual
+
+</p>
+
+</div>
+
+</div>
+
+<div class="empresa">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Diseño UX/UI</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+6 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Híbrida
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
     
 
 

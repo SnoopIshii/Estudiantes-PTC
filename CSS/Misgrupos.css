@@ -1,0 +1,247 @@
+header{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#ececec;
+}
+
+
+.navbar{
+background:#08192f;
+color:white;
+margin:15px;
+border-radius:25px;
+padding:12px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width: 50px;
+height: 50px;
+border-radius:5px;
+}
+
+nav{
+display:flex;
+gap:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+.container-fluid{
+    padding:20px;
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    min-height:100vh;
+}
+
+.sidebar .card{
+    border:none;
+    border-radius:15px;
+}
+
+/* ===========================
+   TARJETAS
+=========================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    transition:.3s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card-header{
+    background:white;
+    font-weight:bold;
+    border-bottom:1px solid #ececec;
+}
+
+.card-body{
+    background:white;
+}
+
+/* ===========================
+   ICONOS
+=========================== */
+
+.card i{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   ESTADÍSTICAS
+=========================== */
+
+.card h2{
+    font-weight:bold;
+}
+
+.card p{
+    color:#777;
+}
+
+/* ===========================
+   TABLAS
+=========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#f3f6fb;
+}
+
+.table th{
+    font-size:14px;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+/* ===========================
+   PROGRESS
+=========================== */
+
+.progress{
+    height:10px;
+    border-radius:20px;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+    padding:8px 14px;
+    font-size:13px;
+}
+
+/* ===========================
+   LIST GROUP
+=========================== */
+
+.list-group-item{
+    border:none;
+    padding:16px;
+}
+
+.list-group-item:hover{
+    background:#eef5ff;
+}
+
+/* ===========================
+   ALERTAS
+=========================== */
+
+.alert{
+    border:none;
+    border-radius:12px;
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+
+.btn{
+    border-radius:12px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.03);
+}
+
+/* ===========================
+   CANVAS
+=========================== */
+
+canvas{
+    width:100% !important;
+    height:300px !important;
+}
+
+/* ===========================
+   EFECTOS
+=========================== */
+
+.shadow{
+    box-shadow:0 4px 20px rgba(0,0,0,.08)!important;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+margin-bottom:20px;
+
+}
+
+.navbar .form-control{
+
+width:100%;
+
+margin-top:10px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+h2{
+
+font-size:22px;
+
+}
+
+.navbar-brand{
+
+font-size:18px;
+
+}
+
+}
