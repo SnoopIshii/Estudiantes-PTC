@@ -16,421 +16,111 @@
         <h2>RICALDONE</h2>
     </div>
 
+
     <nav>
-                <a href="index.html"><i class="fa-regular fa-square-check"></i> Inicio</a>
-        <a href="Mis grupos.html"><i class="fa-solid fa-user-graduate"></i> Mis grupos</a>
-        <a href="estudiantes.html"><i class="fa-regular fa-file-lines"></i> Estudiantes</a>
-                <a href="pasantias.html"><i class="fa-regular fa-file-lines"></i> Pasantías</a>
+        <a href="index.html"><i class="fa-regular fa-square-check"></i> Inicio</a>
+        <a href="Mis grupos.html"><i class="fa-solid fa-user-graduate"></i>Estudiantes</a>
+        <a href="estudiantes.html"><i class="fa-regular fa-file-lines"></i> Mis Grupos</a>
+        <a href="pasantias.html"><i class="fa-regular fa-file-lines"></i> Pasantías</a>
         <a href="notificaciones.html"><i class="fa-regular fa-bell"></i> Notificaciones</a>
-    </nav>
 
     <div class="buscar">
         <input type="text" placeholder="Busca estudiantes">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
+
 </header>
 
-
-<!-- contenedor -->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-ld-2-sidebar">
-            <div class="card mt-4 shadow">
-                <div class="card-body text-center">
-                    <img src="" alt="" class="rounded-circle mb-3">
-                    <h5>Lic. Carlos Mendoza</h5>
-                    <p class="text-muted">Docente</p>
-                    <button class="btn btn-primary w-100"></button>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-header">Mi especialidad
-                </div>
-                <div class="card-body">
-                    <i class="bi bi-code-square text-primary fs-2"></i>
-                    <h6>Desarollo de Software</h6>
-                    <p>Solo puedes administrar estudiantes de tu especialidad</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-header">Periodo actual
-                </div>
-                <div class="card-body">
-                    <h6>Ciclo I-2025</h6>
-                    <p>Enero Junio 2025</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-7 mt-4">
-            <h2>Bienvenido Lic. Carlos Mendoza</h2>
-            <p>Resumen general de tu actividad academica</p>
-
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <i class="bi bi-people-fill text-primary fs-1"></i>
-                            <h2>40</h2>
-                            <p>Estudiantes</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <i class="bi bi-people-fill text-primary fs-1"></i>
-                            <h2>18</h2>
-                            <p>Pasantias</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <i class="bi bi-people-fill text-primary fs-1"></i>
-                            <h2>4250</h2>
-                            <p>Horas</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <i class="bi bi-people-fill text-primary fs-1"></i>
-                            <h2>72%</h2>
-                            <p>Avance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-lg-7">
-                    <div class="card">
-                        <div class="card-header">
-                            Proceso de horas sociales
-                        </div>
-                        <div class="card-body">
-                            <canvas id="barras"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card">
-                        <div class="card-header">
-                            Estado de pasantias
-                        </div>
-                        <div class="card-body">
-                            <canvas id="panel"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!--================ TABLA DE GRUPOS =================-->
+<div class="row">
 
-<div class="row mt-4">
+<!-- ================= SIDEBAR ================= -->
 
-    <div class="col-lg-12">
+<div class="col-lg-2 mt-3">
 
-        <div class="card shadow">
+<div class="card shadow-sm perfil-card">
 
-            <div class="card-header fw-bold">
+<div class="text-center p-4">
 
-                Resumen de grupos a tu cargo
+<img src="assets/avatar.png"
+class="perfil-img">
 
-            </div>
+<h4 class="mt-3">
 
-            <div class="card-body">
+Usuario
 
-                <table class="table table-hover align-middle">
+</h4>
 
-                    <thead>
+<p class="text-secondary mb-1">
 
-                        <tr>
+Lic. Carlos Mendoza
 
-                            <th>Grupo</th>
-                            <th>Estudiantes</th>
-                            <th>Horas</th>
-                            <th>Avance</th>
-                            <th>Estado</th>
+</p>
 
-                        </tr>
+<p class="text-secondary mb-1">
 
-                    </thead>
+Docente
 
-                    <tbody>
+</p>
 
-                        <tr>
+<h6>
 
-                            <td>2 Software A - G1</td>
-                            <td>20</td>
-                            <td>2,150</td>
+Desarrollo de Software
 
-                            <td width="250">
+</h6>
 
-                                <div class="progress">
+<button class="btn btn-primary w-100 mt-3">
 
-                                    <div class="progress-bar bg-success"
-                                        style="width:75%">
+Ver mi perfil
 
-                                        75%
-
-                                    </div>
-
-                                </div>
-
-                            </td>
-
-                            <td>
-
-                                <span class="badge bg-success">
-
-                                    Avanzado
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>2 Software A - G2</td>
-                            <td>20</td>
-                            <td>2,100</td>
-
-                            <td>
-
-                                <div class="progress">
-
-                                    <div class="progress-bar bg-warning"
-                                        style="width:68%">
-
-                                        68%
-
-                                    </div>
-
-                                </div>
-
-                            </td>
-
-                            <td>
-
-                                <span class="badge bg-warning text-dark">
-
-                                    Atención
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>2 Software B - G1</td>
-                            <td>18</td>
-                            <td>1,980</td>
-
-                            <td>
-
-                                <div class="progress">
-
-                                    <div class="progress-bar bg-primary"
-                                        style="width:82%">
-
-                                        82%
-
-                                    </div>
-
-                                </div>
-
-                            </td>
-
-                            <td>
-
-                                <span class="badge bg-primary">
-
-                                    Excelente
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!--================ ACTIVIDAD RECIENTE =================-->
-
-<div class="row mt-4">
-
-    <div class="col-lg-7">
-
-        <div class="card shadow">
-
-            <div class="card-header fw-bold">
-
-                Actividad reciente
-
-            </div>
-
-            <div class="card-body">
-
-                <ul class="list-group list-group-flush">
-
-                    <li class="list-group-item">
-
-                        <i class="bi bi-check-circle-fill text-success"></i>
-
-                        Juan Pérez registró 8 horas sociales.
-
-                    </li>
-
-                    <li class="list-group-item">
-
-                        <i class="bi bi-upload text-primary"></i>
-
-                        Ana Sofía subió su reporte semanal.
-
-                    </li>
-
-                    <li class="list-group-item">
-
-                        <i class="bi bi-file-earmark-text text-warning"></i>
-
-                        Carlos Díaz completó su evaluación.
-
-                    </li>
-
-                    <li class="list-group-item">
-
-                        <i class="bi bi-award text-danger"></i>
-
-                        María José fue evaluada.
-
-                    </li>
-
-                    <li class="list-group-item">
-
-                        <i class="bi bi-person-check text-success"></i>
-
-                        Luis Fernando registró horas sociales.
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-<!--================ GRAFICA LINEAL =================-->
-
-    <div class="col-lg-5">
-
-        <div class="card shadow">
-
-            <div class="card-header fw-bold">
-
-                Rendimiento General
-
-            </div>
-
-            <div class="card-body">
-
-                <canvas id="linea"></canvas>
-
-            </div>
-
-        </div>
-
-    </div>
+</button>
 
 </div>
 
 </div>
 
-<!--================ PANEL DERECHO =================-->
+<!-- ================= GRUPOS ================= -->
 
-<div class="col-lg-3 mt-4">
+<div class="card shadow-sm mt-3">
 
-<div class="card shadow">
+<div class="card-header">
 
-<div class="card-header fw-bold">
-
-Acciones rápidas
+<h4>Mis grupos asignados</h4>
 
 </div>
 
 <div class="list-group list-group-flush">
 
-<a href="#" class="list-group-item list-group-item-action">
+<a href="#" class="list-group-item active">
 
-<i class="bi bi-person-plus text-primary"></i>
+<i class="bi bi-people-fill"></i>
 
-Asignar pasantía
-
-</a>
-
-<a href="#" class="list-group-item list-group-item-action">
-
-<i class="bi bi-clock-history text-success"></i>
-
-Registrar horas
+2 Software A - Grupo 1
 
 </a>
 
-<a href="#" class="list-group-item list-group-item-action">
+<a href="#" class="list-group-item">
 
-<i class="bi bi-calendar-check text-warning"></i>
+<i class="bi bi-people"></i>
 
-Registrar asistencia
-
-</a>
-
-<a href="#" class="list-group-item list-group-item-action">
-
-<i class="bi bi-file-earmark text-danger"></i>
-
-Revisar reportes
+2 Software A - Grupo 2
 
 </a>
 
-<a href="#" class="list-group-item list-group-item-action">
+<a href="#" class="list-group-item">
 
-<i class="bi bi-cloud-upload text-info"></i>
+<i class="bi bi-people"></i>
 
-Subir documento
+2 Software B - Grupo 1
 
 </a>
 
-<a href="#" class="list-group-item list-group-item-action">
+<a href="#" class="list-group-item">
 
-<i class="bi bi-pencil-square text-secondary"></i>
+<i class="bi bi-people"></i>
 
-Crear evaluación
+2 Software B - Grupo 2
 
 </a>
 
@@ -438,58 +128,452 @@ Crear evaluación
 
 </div>
 
-<!--================ ALERTAS =================-->
+</div>
 
-<div class="card shadow mt-4">
+<!-- ================= EMPRESAS ================= -->
 
-<div class="card-header fw-bold">
+<div class="col-lg-4 mt-3">
 
-Alertas
+<div class="empresa-lista">
+
+<div class="empresa active">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Desarrollo Frontend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+4 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Presencial
+
+</p>
 
 </div>
 
-<div class="card-body">
+</div>
 
-<div class="alert alert-danger">
+<div class="empresa">
 
-<strong>6 estudiantes</strong><br>
+<div class="logo"></div>
 
-En riesgo.
+<div>
+
+<h4>Desarrollo Frontend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+2 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Presencial
+
+</p>
 
 </div>
 
-<div class="alert alert-warning">
+</div>
 
-<strong>4 reportes</strong><br>
+<div class="empresa">
 
-Pendientes de revisar.
+<div class="logo"></div>
+
+<div>
+
+<h4>Desarrollo Frontend</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+5 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Presencial
+
+</p>
 
 </div>
 
-<div class="alert alert-info">
+</div>
 
-<strong>2 pasantías</strong><br>
+<div class="empresa">
 
-Sin empresa asignada.
+<div class="logo"></div>
 
-     </div>
+<div>
 
-   </div>
+<h4>Desarrollo Backend</h4>
 
-  </div>
+<h6 class="empresa-nombre">
 
-  </div>
+Nombre de la empresa
 
-   </div>
+</h6>
 
-   </div>
+<p class="cupos">
+
+3 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Virtual
+
+</p>
+
+</div>
+
+</div>
+
+<div class="empresa">
+
+<div class="logo"></div>
+
+<div>
+
+<h4>Diseño UX/UI</h4>
+
+<h6 class="empresa-nombre">
+
+Nombre de la empresa
+
+</h6>
+
+<p class="cupos">
+
+6 Cupos disponibles
+
+</p>
+
+<p class="modalidad">
+
+Híbrida
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 
+<!-- ================= ESTUDIANTES ================= -->
 
+<div class="col-lg-3 mt-3">
 
+    <div class="card shadow-sm">
 
+        <div class="card-header bg-white">
 
+            <div class="d-flex justify-content-between align-items-center">
 
+                <h5 class="mb-0">Estudiantes</h5>
+
+                <div class="input-group input-group-sm w-50">
+
+                    <span class="input-group-text bg-white">
+                        <i class="bi bi-search"></i>
+                    </span>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Buscar estudiante"
+                        id="buscarEstudiante">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card-body p-0">
+
+            <div class="tabla-header">
+
+                <span>Estudiantes</span>
+
+                <span>Progreso</span>
+
+            </div>
+
+            <div class="lista-estudiantes">
+
+                <!-- Estudiante -->
+
+                <div class="estudiante">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="assets/avatar.png" class="avatar-mini">
+
+                        <div class="ms-2">
+
+                            <strong>Nombre del estudiante</strong>
+
+                            <br>
+
+                            <small>2 Software A - G1</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="progreso">
+
+                        <span>30 / 200</span>
+
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger"
+                                 style="width:15%"></div>
+
+                        </div>
+
+                        <span>15%</span>
+
+                    </div>
+
+                    <input
+                        class="form-check-input seleccionar"
+                        type="checkbox">
+
+                </div>
+
+                <!-- Duplicar este bloque para más estudiantes -->
+
+                <div class="estudiante">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="assets/avatar.png" class="avatar-mini">
+
+                        <div class="ms-2">
+
+                            <strong>Nombre del estudiante</strong>
+
+                            <br>
+
+                            <small>2 Software A - G1</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="progreso">
+
+                        <span>30 / 200</span>
+
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger"
+                                 style="width:15%"></div>
+
+                        </div>
+
+                        <span>15%</span>
+
+                    </div>
+
+                    <input
+                        class="form-check-input seleccionar"
+                        type="checkbox">
+
+                </div>
+
+                <div class="estudiante">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="assets/avatar.png" class="avatar-mini">
+
+                        <div class="ms-2">
+
+                            <strong>Nombre del estudiante</strong>
+
+                            <br>
+
+                            <small>2 Software A - G1</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="progreso">
+
+                        <span>30 / 200</span>
+
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger"
+                                 style="width:15%"></div>
+
+                        </div>
+
+                        <span>15%</span>
+
+                    </div>
+
+                    <input
+                        class="form-check-input seleccionar"
+                        type="checkbox">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= PANEL DERECHO ================= -->
+
+<div class="col-lg-3 mt-3">
+
+    <div class="card shadow-sm mb-3">
+
+        <div class="card-header">
+
+            <h5>Detalle asignación</h5>
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-borderless">
+
+                <tr>
+
+                    <td><strong>Empresa</strong></td>
+
+                    <td>Nombre de la empresa</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><strong>Rol</strong></td>
+
+                    <td>Frontend Developer</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><strong>Modalidad</strong></td>
+
+                    <td>Presencial</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><strong>Duración</strong></td>
+
+                    <td>6 meses</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="card shadow-sm">
+
+        <div class="card-header">
+
+            <h5>Estudiante seleccionado</h5>
+
+        </div>
+
+        <div class="card-body text-center">
+
+            <img
+                src="assets/avatar.png"
+                class="perfil-mini">
+
+            <h6 class="mt-3">
+
+                Nombre del estudiante
+
+            </h6>
+
+            <p>
+
+                2 Software A - G1
+
+            </p>
+
+            <h5>
+
+                30 / 200
+
+            </h5>
+
+            <div class="progress mt-3">
+
+                <div class="progress-bar bg-danger"
+                     style="width:15%">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button
+        class="btn btn-primary btn-lg w-100 mt-4"
+        id="asignar">
+
+        Asignar Pasantía
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
 
 
 

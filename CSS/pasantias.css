@@ -40,196 +40,270 @@ color:white;
 text-decoration:none;
 }
 
-.buscar{
-position:relative;
+.container-fluid{
+    padding:20px;
 }
 
-.buscar input{
-width:260px;
-padding:10px 40px 10px 15px;
-border:none;
-border-radius:20px;
-}
-
-.buscar i{
-position:absolute;
-right:15px;
-top:12px;
-color:black;
-}
-
-.container{
-display:grid;
-grid-template-columns:180px 270px 300px 180px;
-gap:15px;
-padding:0 20px;
-}
-
-.perfil{
-background:white;
-padding:20px;
-border-radius:15px;
-text-align:center;
-}
-
-.avatar{
-font-size:80px;
-color:#aaa;
-}
-
-.perfil p{
-color:#777;
-margin-top:10px;
-}
-
-.perfil button{
-width:100%;
-background:#2d6cdf;
-color:white;
-border:none;
-padding:10px;
-border-radius:10px;
-margin-top:15px;
-cursor:pointer;
-}
-
-.grupo{
-background:white;
-padding:15px;
-border-radius:15px;
-margin-top:10px;
-}
-
-.grupo ul{
-list-style:none;
-}
-
-.grupo li{
-padding:12px;
-margin-top:5px;
-border-radius:10px;
-cursor:pointer;
-}
-
-.grupo .activo{
-background:#edf4ff;
-color:#2d6cdf;
-}
-
-.vacantes,
-.estudiantes{
-background:white;
-padding:10px;
-border-radius:15px;
-height:385px;
-overflow-y:auto;
-}
-
-.vacantes-card{
-display:flex;
-gap:10px;
-padding:10px;
-border-radius:15px;
-border:2px solid transparent;
-cursor:pointer;
-margin-bottom:10px;
-}
-
-.vacante-card.activo{
-border:2px solid #2d6cdf;
-}
-
-.vacante-img{
-width:60px;
-height:45px;
-background:#d9d9d9;
-border-radius:8px;
-}
-
-.vacante-info h4{
-font-size:16px;
-}
-
-.company{
-color:#2d6cdf;
-font-size:12px;
-font-weight:600;
-}
-
-.slots{
-color:#20b85b;
-font-size:12px;
-}
-
-.estudiantes-head{
-display:flex;
-justify-content:space-between;
-margin-bottom:15px;
-}
-
-.estudiantes-head input{
-padding:7px;
-border-radius:15px;
-border:1px solid #ccc;
-}
-
-.estudiantes{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 0;
-border-bottom:1px solid #eee;
-}
-
-.estudiantes-info{
-display:flex;
-gap:10px;
-align-items:center;
-}
-
-.estudiantes i{
-font-size:26px;
-color:#999;
-}
-
-.proceso{
-width:90px;
-height:8px;
-background:#ddd;
-border-radius:10px;
-overflow:hidden;
-}
-
-.bar{
-width:15%;
-height:100%;
-background:red;
-}
-
-.detalles{
-display:flex;
-flex-direction:column;
-gap:12px;
-}
 
 .card{
-background:white;
-padding:15px;
-border-radius:15px;
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
 }
 
-.estudi-selec{
-display:flex;
-gap:10px;
-margin:10px 0;
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
 
-.asignacion{
-background:#2d6cdf;
-color:white;
-border:none;
-padding:14px;
-border-radius:25px;
-cursor:pointer;
-font-weight:600;
+.shadow-sm{
+    box-shadow:0 4px 15px rgba(0,0,0,.08)!important;
+}
+
+.card-header{
+    background:white;
+    border-bottom:1px solid #ececec;
+    font-weight:600;
+}
+
+
+.perfil-card{
+    text-align:center;
+}
+
+.perfil-img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #f2f2f2;
+}
+
+.perfil-mini{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.btn-primary{
+    background:#2d6cdf;
+    border:none;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.btn-primary:hover{
+    background:#1d56bd;
+}
+
+.list-group-item{
+    border:none;
+    padding:15px 18px;
+    transition:.3s;
+}
+
+.list-group-item:hover{
+    background:#eef4ff;
+}
+
+.list-group-item.active{
+    background:#eaf2ff;
+    color:#2d6cdf;
+    border-left:5px solid #2d6cdf;
+}
+
+
+
+.empresa-lista{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.empresa{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    background:white;
+    border:2px solid transparent;
+    border-radius:18px;
+    padding:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.empresa:hover{
+    border-color:#2d6cdf;
+}
+
+.empresa.active{
+    border:3px solid #2d6cdf;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    background:#dddddd;
+    border-radius:12px;
+}
+
+.empresa h4{
+    margin:0;
+    font-size:20px;
+    font-weight:700;
+}
+
+.empresa-nombre{
+    color:#2d6cdf;
+    margin-top:5px;
+}
+
+.cupos{
+    color:#28a745;
+    font-weight:600;
+    margin-bottom:3px;
+}
+
+.modalidad{
+    font-weight:600;
+    margin:0;
+}
+
+/* ===================================
+   TABLA ESTUDIANTES
+=================================== */
+
+.tabla-header{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 20px;
+    background:#f4f5f8;
+    font-weight:600;
+}
+
+.lista-estudiantes{
+    max-height:600px;
+    overflow-y:auto;
+}
+
+.estudiante{
+    display:grid;
+    grid-template-columns:1.8fr 1fr auto;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-bottom:1px solid #ececec;
+}
+
+.estudiante:hover{
+    background:#fafcff;
+}
+
+.avatar-mini{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.progreso{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.progress{
+    width:120px;
+    height:8px;
+    border-radius:10px;
+    background:#ececec;
+}
+
+
+.table td{
+    padding:10px;
+    vertical-align:middle;
+}
+
+.form-check-input{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+}
+
+
+.input-group-text{
+    background:white;
+}
+
+.form-control{
+    border-radius:8px;
+}
+
+
+.lista-estudiantes::-webkit-scrollbar{
+    width:8px;
+}
+
+.lista-estudiantes::-webkit-scrollbar-thumb{
+    background:#c8d2e0;
+    border-radius:10px;
+}
+
+
+@media(max-width:1200px){
+
+.estudiante{
+
+grid-template-columns:1fr;
+
+}
+
+.progreso{
+
+margin-top:10px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.col-lg-2,
+.col-lg-3,
+.col-lg-4{
+
+margin-bottom:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.perfil-img{
+
+width:90px;
+height:90px;
+
+}
+
+.empresa{
+
+flex-direction:column;
+
+}
+
+.empresa h4{
+
+font-size:18px;
+
+}
+
+.progress{
+
+width:100%;
+
+}
+
 }
